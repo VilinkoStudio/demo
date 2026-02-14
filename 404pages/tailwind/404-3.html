@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - 页面未找到</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#5279fb',
+                        bgMain: '#ffffff',
+                        textDark: '#000000'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="m-0 p-0 overflow-hidden">
+    <main class="h-screen w-full flex flex-col justify-center items-center bg-white">
+        <h1 class="text-9xl font-extrabold text-black tracking-widest">404</h1>
+        <div class="bg-[#5279fb] px-2 text-sm rounded rotate-12 absolute text-white">
+            Page Not Found
+        </div>
+        <button class="mt-5 focus:outline-none">
+            <a
+                class="relative inline-block text-sm font-medium text-[#5279fb] group active:text-[#4066e0] focus:outline-none focus:ring-2 focus:ring-[#5279fb] focus:ring-opacity-50"
+                href="/"
+            >
+                <span
+                    class="absolute inset-0 transition-transform translate-x-0.5 translate-y-0.5 bg-[#5279fb] group-hover:translate-y-0 group-hover:translate-x-0"
+                ></span>
+                <span class="relative block px-8 py-3 bg-white border border-[#5279fb] text-black">
+                    Go Home
+                </span>
+            </a>
+        </button>
+    </main>
+</body>
+</html>
